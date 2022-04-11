@@ -27,11 +27,19 @@ SITE_URL=https://madrichim.ovh #הכתובת שבה זמינה האפליקצי�
 * https://kaffeine.herokuapp.com
 * https://www.downnotifier.com
 
-## מראי מקומות
-https://devcenter.heroku.com/articles/platform-api-reference#dyno-restart-all
 
-### יצירת טוקן קבוע:
+## יצירת טוקן קבוע:
+קודם כל יש להתקין את heroku cli ([עבור Windows 64-bit](https://cli-assets.heroku.com/heroku-x64.exe))
+
+ואז התחברות לחשבון בheroku:
 ```
-$ heroku authorizations:create
+heroku login
 ```
-https://devcenter.heroku.com/articles/platform-api-quickstart#authentication
+ויצירת טוקן:
+```
+heroku authorizations:create
+```
+## מראי מקומות
+* https://devcenter.heroku.com/articles/platform-api-reference#dyno-restart-all
+
+* https://devcenter.heroku.com/articles/platform-api-quickstart#authentication
