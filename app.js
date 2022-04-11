@@ -38,7 +38,7 @@ function sleep (ms) {
         const WaitingTime = '50s';
         console.log(`⏳Waiting ${WaitingTime}. please wait...`);
         await sleep(ms(WaitingTime));
-        console.log('🧐Waiting completed!');
+        console.log('😎Waiting completed!');
     } while (true);
 })();
 
