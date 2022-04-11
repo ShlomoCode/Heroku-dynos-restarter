@@ -25,7 +25,7 @@ function sleep (ms) {
             await axios.get(process.env.SITE_URL || `https://${appName}.herokuapp.com/`);
             console.log('✅application OK!');
         } catch (error) {
-            if (error.response.status !== 200) {
+            if (error.response) {
                 console.log(`🥵application error!! (status ${error.response.status}) 🛠️Restarting dynos, please wait...`);
                 try {
                     const resetDynosResponse = await axios.delete(`https://api.heroku.com/apps/${appName}/dynos`);
@@ -33,6 +33,8 @@ function sleep (ms) {
                 } catch (error) {
                     console.log(error);
                 }
+            } else {
+                console.log(`😢 Error calling site ("${error.config.url}") -`, error.message);
             }
         }
         const WaitingTime = '50s';
