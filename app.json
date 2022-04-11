@@ -1,0 +1,19 @@
+{
+    "name": "restart dynos in heroku",
+    "description": "אפליקציית nodeJS למעקב אחרי פידי rss ושליחתם למייל.",
+    "repository": "https://github.com/ShlomoCode/rss-to-mail",
+    "success_url": "/",
+    "website": "https://github.com/ShlomoCode/rss-to-mail",
+    "env": {
+        "TOKEN_API_HEROKU": {
+            "description": "טוקן API קבוע של heroku. ראה REDME כיצד להנפיק כזה."
+        },
+        "APP_NAME": {
+            "description": "שם האפליקציה שעליה מתבצע הניטור."
+        },
+        "SITE_URL": {
+            "description": "כתובת האינטרנט שבה פועלת האפליקציה המנוטרת - דומיין מותאם אישית (במקרה שהאפליקציה פועלת על דומיין חינמי של heroku ניתן להשאיר ריק)",
+            "required": false
+        }
+    }
+}
