@@ -8,7 +8,7 @@ In `config.env` file in root directory.
 ```
 TOKEN_API_HEROKU=fc0d678d-6b63-4b93-b7bc-19e5fbe8e3r9 #טוקן heroku
 APP_NAME=madrichim #שם האפליקציה בהרקו
-SITE_URL=https://madrichim.ovh #הכתובת שאותה יש לנטר
+SITE_URL=https://madrichim.ovh #הכתובת שבה זמינה האפליקציה המנוטרת (אם יש רק דומיין חינמי של heroku ניתן להשאיר ריק)
 ```
 
 # Deploy in heroku
