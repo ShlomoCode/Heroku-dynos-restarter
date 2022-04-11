@@ -21,6 +21,7 @@ function sleep (ms) {
         const appName = process.env.APP_NAME;
         if (!appName) return console.log('APP_NAME is required!');
         try {
+            console.log('🧐get to site application, please wait...');
             await axios.get(process.env.SITE_URL || `https://${appName}.herokuapp.com/`);
             console.log('😎application OK!');
         } catch (error) {
