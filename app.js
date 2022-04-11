@@ -23,7 +23,7 @@ function sleep (ms) {
         try {
             console.log('🧐get to site application, please wait...');
             await axios.get(process.env.SITE_URL || `https://${appName}.herokuapp.com/`);
-            console.log('😎application OK!');
+            console.log('✅application OK!');
         } catch (error) {
             if (error.response.status !== 200) {
                 console.log(`🥵application error!! (status ${error.response.status}) 🛠️Restarting dynos, please wait...`);
@@ -38,7 +38,7 @@ function sleep (ms) {
         const WaitingTime = '50s';
         console.log(`⏳Waiting ${WaitingTime}. please wait...`);
         await sleep(ms(WaitingTime));
-        console.log('✅Waiting completed!');
+        console.log('🧐Waiting completed!');
     } while (true);
 })();
 
