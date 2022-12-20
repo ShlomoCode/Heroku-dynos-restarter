@@ -1,6 +1,8 @@
 # Heroku dynos restarter
 
-אפליקציה לאתחול הדינו'ס של אפליקציית נוד כבדה על על הרקו, במקרה שהיא קרסה. נוצר עבור https://madrichim.ovh.
+אפליקציה לאתחול הדינו'ס של אפליקציית נוד כבדה על על הרקו, במקרה שהיא קרסה.
+
+לא שימושי כ"כ מאז ביטול התוכניות החינמיות של Heroku.
 
 # Config example
 
@@ -20,9 +22,8 @@ SITE_URL=https://madrichim.ovh #הכתובת שבה זמינה האפליקצי�
 </div>
 
 ## מניעת "הירדמות" אוטומטית
-בתוכנית החינמית של heroku, [השרת נכבה מעצמו](https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping) אחרי 30 דקות ללא בקשה חיצונית לשרת.
-ניתן לעקוף זאת על ידי [אימות אשראי בחשבון ההרקו](https://devcenter.heroku.com/articles/account-verification), וכך מקבלים סה"כ 1000 שעות חינם בחודש, שמספיקות לפעילות רציפה של האפליקציה.
-לאחר מכן יש לשלוח "בקשת דמה" לאפליקציה כל פחות מ-30 דקות.
+בתוכנית Eco של heroku, [השרת נכבה מעצמו](https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping) אחרי 30 דקות ללא בקשה חיצונית לשרת.
+כדי למנוע את זה יש לשלוח "בקשת דמה" לאפליקציה כל פחות מ-30 דקות.
  ניתן לעשות זאת בקלות באמצעות אחד האתרים הבאים:
 * https://kaffeine.herokuapp.com
 * https://www.downnotifier.com
